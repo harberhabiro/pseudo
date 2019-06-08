@@ -1,0 +1,37 @@
+Pseudo-code
+//This is a program to calculate the total prices of mangos, state and county taxes.
+//The numbers of mangos purchased are input by the user.
+//Variables
+Declare Integer mangos //Number of mangos purchased
+Declare Integer state //Number of state taxes
+Declare Integer county //Number of county taxes
+Declare Real mangoCost //Cost of mangos
+Declare Real stateCost //Cost of state
+Declare Real countyCost //Cost of county
+//Constant for cost of mangos and state taxes
+Constant Real ONE_MANGO = 100
+Constant Real ONE_STATE = 0.04
+Constant Real ONE_COUNTY = 0.02
+//Get the number of mangos purchased 
+Display “Please enter the number of mangos purchased:”
+Input mangos
+//Get the number of state taxes
+Display “Please enter the number of state taxes: “
+Input state
+//Get the number of county taxes
+Display “Please enter the number of county taxes: “
+Input county
+//Determine mango cost
+mangoCost = ONE_MANGO * mangos
+//Determine state cost
+stateCost = ONE_STATE * state
+//Determine county cost 
+countyCost = ONE_COUNTY * county
+//Display the cost of mangos
+Display “The cost of mangos is “, mangoCost
+//Display the cost of state
+Display “The cost of state taxes is “, stateCost
+//Display the cost of county
+Display “The cost of county taxes is “, countyCost
+//Display the total cost
+Display “The total cost is “, mangoCost + stateCost + countyCost
